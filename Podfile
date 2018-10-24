@@ -6,5 +6,8 @@ target 'Dark Skys' do
   use_frameworks!
 
   # Pods for Dark Skys
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 
 
 end
