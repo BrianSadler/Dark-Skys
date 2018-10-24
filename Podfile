@@ -8,6 +8,6 @@ target 'Dark Skys' do
   # Pods for Dark Skys
     pod 'Alamofire'
     pod 'SwiftyJSON'
-    pod 
+   
 
 end

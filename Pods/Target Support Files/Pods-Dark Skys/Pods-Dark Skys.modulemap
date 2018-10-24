@@ -1,0 +1,6 @@
+framework module Pods_Dark_Skys {
+  umbrella header "Pods-Dark Skys-umbrella.h"
+
+  export *
+  module * { export * }
+}
