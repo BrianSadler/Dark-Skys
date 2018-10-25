@@ -13,6 +13,7 @@
 		209CABA22180FE08003ABABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209CABA02180FE08003ABABC /* Main.storyboard */; };
 		209CABA42180FE08003ABABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209CABA32180FE08003ABABC /* Assets.xcassets */; };
 		209CABA72180FE08003ABABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209CABA52180FE08003ABABC /* LaunchScreen.storyboard */; };
+		20F7C28C218236EB001853F9 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7C28B218236EB001853F9 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		209CABA32180FE08003ABABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209CABA62180FE08003ABABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209CABA82180FE08003ABABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F7C28B218236EB001853F9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		411194229F40B7C2791CC077 /* Pods_Dark_Skys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dark_Skys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6376383FD126E98E7873601 /* Pods-Dark Skys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dark Skys.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dark Skys/Pods-Dark Skys.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				209CABA32180FE08003ABABC /* Assets.xcassets */,
 				209CABA52180FE08003ABABC /* LaunchScreen.storyboard */,
 				209CABA82180FE08003ABABC /* Info.plist */,
+				20F7C28B218236EB001853F9 /* APIKeys.swift */,
 			);
 			path = "Dark Skys";
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F7C28C218236EB001853F9 /* APIKeys.swift in Sources */,
 				209CAB9F2180FE08003ABABC /* ViewController.swift in Sources */,
 				209CAB9D2180FE08003ABABC /* AppDelegate.swift in Sources */,
 			);
