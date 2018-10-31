@@ -12,7 +12,7 @@
         <!--Dark Skys-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dark_Skys" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherDisplayViewController" customModule="Dark_Skys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,17 +96,22 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="currentTempLabel" destination="J69-Ef-UXK" id="uBT-dj-H1I"/>
                         <outlet property="darkSkyLogo" destination="sGD-te-Z6O" id="Gun-pP-yKt"/>
+                        <outlet property="highTempLabel" destination="nyk-HW-li7" id="nId-Qy-WQh"/>
+                        <outlet property="iconLabel" destination="iAx-Kk-rtl" id="8YH-9R-e7e"/>
+                        <outlet property="locationTitleView" destination="JHs-XT-Pzb" id="fzK-Qp-4n5"/>
+                        <outlet property="lowTempLabel" destination="9cd-6L-KiW" id="GHP-zN-yCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Selection View Controller-->
         <scene sceneID="ZOU-mb-qA2">
             <objects>
-                <viewController id="KlY-73-dIs" sceneMemberID="viewController">
+                <viewController id="KlY-73-dIs" customClass="LocationSelectionViewController" customModule="Dark_Skys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="idk-AX-QZ3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,8 +129,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CEC-Xs-93x"/>
                     </view>
+                    <connections>
+                        <outlet property="locationSearch" destination="Cqs-86-CRX" id="T5z-10-mxc"/>
+                        <segue destination="FEw-IA-Sqd" kind="unwind" identifier="unwindToWeatherDisplay" unwindAction="unwindToWeatherDisplayWithSegue:" id="5oZ-nl-jxU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMr-qG-f6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FEw-IA-Sqd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1921" y="133"/>
         </scene>
